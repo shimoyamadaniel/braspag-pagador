@@ -11,7 +11,7 @@ describe BraspagPagador::Crypto::Webservice do
     conn
   end
 
-  let(:poster) { mock }
+  let(:poster) { double }
 
   describe "encrypt" do
     let(:key) {"XXXXX"}
@@ -20,7 +20,7 @@ describe BraspagPagador::Crypto::Webservice do
       body_invalid = <<-EOXML
 SERVER was unable to process
 EOXML
-      poster.stub(:do_post => mock(:body => body_invalid))
+      poster.stub(:do_post => double(:body => body_invalid))
       BraspagPagador::Poster.should_receive(:new).with(connection, 'fakeurl').and_return(poster)
 
       expect {
@@ -37,7 +37,7 @@ EOXML
 </soap:Body></soap:Envelope>
 EOXML
 
-      poster.stub(:do_post => mock(:body => body_invalid))
+      poster.stub(:do_post => double(:body => body_invalid))
       BraspagPagador::Poster.should_receive(:new).with(connection, 'fakeurl').and_return(poster)
 
       expect {
@@ -53,7 +53,7 @@ EOXML
 <EncryptRequestResult>Erro BP 067</EncryptRequestResult></EncryptRequestResponse>
 </soap:Body></soap:Envelope>
 EOXML
-      poster.stub(:do_post => mock(:body => body_invalid))
+      poster.stub(:do_post => double(:body => body_invalid))
       BraspagPagador::Poster.should_receive(:new).with(connection, 'fakeurl').and_return(poster)
 
       expect {
@@ -73,7 +73,7 @@ EOXML
 </soap:Body></soap:Envelope>
               EOXML
 
-        poster.stub(:do_post => mock(:body => valid_body))
+        poster.stub(:do_post => double(:body => valid_body))
         BraspagPagador::Poster.should_receive(:new).with(connection, 'fakeurl').and_return(poster)
 
         resp = BraspagPagador::Crypto::Webservice.new.encrypt(connection, {key: key})
@@ -87,7 +87,7 @@ EOXML
       body_invalid = <<-EOXML
 SERVER was unable to process
 EOXML
-      poster.stub(:do_post => mock(:body => body_invalid))
+      poster.stub(:do_post => double(:body => body_invalid))
       BraspagPagador::Poster.should_receive(:new).with(connection, 'fakeurl').and_return(poster)
 
       expect {
@@ -104,7 +104,7 @@ EOXML
 <DecryptRequestResult><string>Erro BP 068</string></DecryptRequestResult>
 </DecryptRequestResponse></soap:Body></soap:Envelope>
 EOXML
-     poster.stub(:do_post => mock(:body => body_invalid))
+     poster.stub(:do_post => double(:body => body_invalid))
      BraspagPagador::Poster.should_receive(:new).with(connection, 'fakeurl').and_return(poster)
 
      expect {
@@ -126,7 +126,7 @@ EOXML
 </soap:Body></soap:Envelope>
               EOXML
 
-        poster.stub(:do_post => mock(:body => valid_body))
+        poster.stub(:do_post => double(:body => valid_body))
         BraspagPagador::Poster.should_receive(:new).with(connection, 'fakeurl').and_return(poster)
 
         resp = BraspagPagador::Crypto::Webservice.new.decrypt(connection, crypt_string)

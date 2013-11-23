@@ -3,8 +3,8 @@ require 'ostruct'
 
 describe BraspagPagador::Poster do
   let(:request) { OpenStruct.new(:url => 'http://foo/bar') }
-  let(:response) { mock(:body => 'success') }
-  let(:logger) { mock(:info => nil) }
+  let(:response) { double(:body => 'success') }
+  let(:logger) { double(:info => nil) }
   let(:merchant_id) { "{12345678-1234-1234-1234-123456789000}" }
   let(:connection) { BraspagPagador::Connection.new(:merchant_id => merchant_id, :environment => :homologation)}
   let(:connection_logger) { BraspagPagador::Connection.new(:merchant_id => merchant_id, :environment => :homologation, :logger => logger)}

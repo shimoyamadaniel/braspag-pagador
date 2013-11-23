@@ -66,6 +66,12 @@ module BraspagPagador
         protected_card_url + "/CartaoProtegido.asmx?wsdl"
       when :get_credit_card
         protected_card_url + "/CartaoProtegido.asmx?wsdl"
+=begin
+      when :get_card
+        protected_card_url + "/CartaoProtegido.asmx/GetCreditCard"
+      when :recurrency
+        protected_card_url + "/CartaoProtegido.asmx?wsdl"
+=end
       end
     end
 
@@ -77,16 +83,6 @@ module BraspagPagador
         method_name,
         self.convert(method_name, :to, args)
       )
-
-      self.convert(method_name, :from, args + [response] )
-    end
-
-    def soap_request(method_name, *args)
-      url = url_for(method_name)
-      client = Savon.client(wsdl: url)
-
-      response = client.call method_name, message: self.convert(method_name, :to, args)
-
       self.convert(method_name, :from, args + [response] )
     end
 

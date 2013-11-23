@@ -1,14 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/raphaelcosta/github/Cenize/braspag-pagador/lib/braspag-pagador.rb": [
+      "/home/daniel/projetos/ruby/infinity-look/braspag-pagador/lib/braspag-pagador.rb": [
         1,
         1,
         1,
         1,
         1,
         1,
-        1,
+        null,
         1,
         1,
         1,
@@ -99,7 +99,7 @@
         null,
         null
       ],
-      "/Users/raphaelcosta/github/Cenize/braspag-pagador/lib/braspag-pagador/core/converter.rb": [
+      "/home/daniel/projetos/ruby/infinity-look/braspag-pagador/lib/braspag-pagador/core/converter.rb": [
         1,
         1,
         1,
@@ -164,7 +164,7 @@
         null,
         null
       ],
-      "/Users/raphaelcosta/github/Cenize/braspag-pagador/lib/braspag-pagador/core/connection.rb": [
+      "/home/daniel/projetos/ruby/infinity-look/braspag-pagador/lib/braspag-pagador/core/connection.rb": [
         1,
         1,
         null,
@@ -181,19 +181,19 @@
         1,
         null,
         1,
-        69,
-        69,
-        69,
-        68,
-        null,
-        66,
-        66,
-        66,
+        67,
+        67,
+        67,
         66,
         null,
+        64,
+        64,
+        64,
+        64,
+        null,
         null,
         1,
-        89,
+        77,
         null,
         null,
         1,
@@ -201,16 +201,16 @@
         null,
         null,
         1,
-        29,
-        29,
+        25,
+        25,
         null,
-        29,
-        12,
+        25,
+        10,
         null,
-        17,
+        15,
         null,
         null,
-        29,
+        25,
         null,
         2,
         null,
@@ -232,9 +232,13 @@
         null,
         2,
         null,
-        2,
+        0,
         null,
-        2,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null,
@@ -246,25 +250,13 @@
         null,
         null,
         null,
-        null,
         1,
         null,
         null,
         1,
-        0,
-        0,
+        10,
         null,
-        0,
-        null,
-        0,
-        null,
-        0,
-        null,
-        null,
-        1,
-        12,
-        null,
-        6,
+        4,
         null,
         1,
         null,
@@ -275,12 +267,12 @@
         1,
         null,
         null,
-        12,
+        10,
         null,
         null,
         null
       ],
-      "/Users/raphaelcosta/github/Cenize/braspag-pagador/lib/braspag-pagador/core/poster.rb": [
+      "/home/daniel/projetos/ruby/infinity-look/braspag-pagador/lib/braspag-pagador/core/poster.rb": [
         1,
         1,
         1,
@@ -322,7 +314,7 @@
         null,
         null
       ],
-      "/Users/raphaelcosta/github/Cenize/braspag-pagador/lib/braspag-pagador/core/customer.rb": [
+      "/home/daniel/projetos/ruby/infinity-look/braspag-pagador/lib/braspag-pagador/core/customer.rb": [
         1,
         1,
         1,
@@ -337,7 +329,7 @@
         null,
         null
       ],
-      "/Users/raphaelcosta/github/Cenize/braspag-pagador/lib/braspag-pagador/core/order.rb": [
+      "/home/daniel/projetos/ruby/infinity-look/braspag-pagador/lib/braspag-pagador/core/order.rb": [
         1,
         1,
         1,
@@ -625,7 +617,7 @@
         null,
         null
       ],
-      "/Users/raphaelcosta/github/Cenize/braspag-pagador/lib/braspag-pagador/crypto/no_crypto.rb": [
+      "/home/daniel/projetos/ruby/infinity-look/braspag-pagador/lib/braspag-pagador/crypto/no_crypto.rb": [
         1,
         1,
         1,
@@ -633,7 +625,7 @@
         null,
         null
       ],
-      "/Users/raphaelcosta/github/Cenize/braspag-pagador/lib/braspag-pagador/crypto/webservice.rb": [
+      "/home/daniel/projetos/ruby/infinity-look/braspag-pagador/lib/braspag-pagador/crypto/webservice.rb": [
         1,
         1,
         1,
@@ -698,7 +690,7 @@
         null,
         null
       ],
-      "/Users/raphaelcosta/github/Cenize/braspag-pagador/lib/braspag-pagador/payment/billet.rb": [
+      "/home/daniel/projetos/ruby/infinity-look/braspag-pagador/lib/braspag-pagador/payment/billet.rb": [
         1,
         null,
         1,
@@ -779,7 +771,7 @@
         null,
         null
       ],
-      "/Users/raphaelcosta/github/Cenize/braspag-pagador/lib/braspag-pagador/payment/credit_card.rb": [
+      "/home/daniel/projetos/ruby/infinity-look/braspag-pagador/lib/braspag-pagador/payment/credit_card.rb": [
         1,
         1,
         1,
@@ -833,33 +825,33 @@
         null,
         1,
         1,
-        112,
-        112,
-        112,
+        80,
+        80,
+        80,
         null,
-        112,
+        80,
         null,
-        112,
-        12,
-        12,
-        null,
-        null,
+        80,
+        8,
+        8,
         null,
         null,
         null,
-        1,
-        3,
-        null,
-        3,
-        null,
-        3,
-        3,
-        3,
-        3,
         null,
         null,
         1,
         3,
+        null,
+        3,
+        null,
+        3,
+        3,
+        3,
+        3,
+        null,
+        null,
+        1,
+        null,
         null,
         null,
         1,
@@ -876,6 +868,25 @@
         null,
         null,
         null,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0,
+        null,
+        null,
+        1,
+        0,
         0,
         null,
         null,
@@ -971,7 +982,7 @@
         null,
         null
       ],
-      "/Users/raphaelcosta/github/Cenize/braspag-pagador/lib/braspag-pagador/payment/eft.rb": [
+      "/home/daniel/projetos/ruby/infinity-look/braspag-pagador/lib/braspag-pagador/payment/eft.rb": [
         1,
         1,
         1,
@@ -1038,24 +1049,51 @@
         null,
         null
       ],
-      "/Users/raphaelcosta/github/Cenize/braspag-pagador/lib/braspag-pagador/payment/recurrency_credit_card.rb": [
+      "/home/daniel/projetos/ruby/infinity-look/braspag-pagador/lib/braspag-pagador/payment/recurrency_credit_card.rb": [
         1,
         1,
         1,
         0,
+        0,
+        null,
+        0,
         null,
         null,
         1,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0,
         null,
         null,
         null,
         1,
+        0,
+        null,
+        0,
+        null,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null,
         null
       ],
-      "/Users/raphaelcosta/github/Cenize/braspag-pagador/spec/core/converter_spec.rb": [
+      "/home/daniel/projetos/ruby/infinity-look/braspag-pagador/spec/core/converter_spec.rb": [
         1,
         null,
         1,
@@ -1180,7 +1218,7 @@
         null,
         null
       ],
-      "/Users/raphaelcosta/github/Cenize/braspag-pagador/spec/core/customer_spec.rb": [
+      "/home/daniel/projetos/ruby/infinity-look/braspag-pagador/spec/core/customer_spec.rb": [
         1,
         null,
         1,
@@ -1231,7 +1269,7 @@
         null,
         null
       ],
-      "/Users/raphaelcosta/github/Cenize/braspag-pagador/spec/core/order_spec.rb": [
+      "/home/daniel/projetos/ruby/infinity-look/braspag-pagador/spec/core/order_spec.rb": [
         null,
         1,
         null,
@@ -1737,7 +1775,7 @@
         null,
         null
       ],
-      "/Users/raphaelcosta/github/Cenize/braspag-pagador/spec/core/poster_spec.rb": [
+      "/home/daniel/projetos/ruby/infinity-look/braspag-pagador/spec/core/poster_spec.rb": [
         1,
         1,
         null,
@@ -1802,7 +1840,7 @@
         null,
         null
       ],
-      "/Users/raphaelcosta/github/Cenize/braspag-pagador/spec/crypto/webservice_spec.rb": [
+      "/home/daniel/projetos/ruby/infinity-look/braspag-pagador/spec/crypto/webservice_spec.rb": [
         null,
         1,
         null,
@@ -1940,7 +1978,7 @@
         null,
         null
       ],
-      "/Users/raphaelcosta/github/Cenize/braspag-pagador/spec/integration/billet_spec.rb": [
+      "/home/daniel/projetos/ruby/infinity-look/braspag-pagador/spec/integration/billet_spec.rb": [
         null,
         1,
         null,
@@ -1980,10 +2018,10 @@
         null,
         null
       ],
-      "/Users/raphaelcosta/github/Cenize/braspag-pagador/spec/integration/credit_card_spec.rb": [
+      "/home/daniel/projetos/ruby/infinity-look/braspag-pagador/spec/integration/credit_card_spec.rb": [
 
       ],
-      "/Users/raphaelcosta/github/Cenize/braspag-pagador/spec/payment/billet_spec.rb": [
+      "/home/daniel/projetos/ruby/infinity-look/braspag-pagador/spec/payment/billet_spec.rb": [
         null,
         1,
         null,
@@ -2190,7 +2228,7 @@
         null,
         null
       ],
-      "/Users/raphaelcosta/github/Cenize/braspag-pagador/spec/payment/credit_card_spec.rb": [
+      "/home/daniel/projetos/ruby/infinity-look/braspag-pagador/spec/payment/credit_card_spec.rb": [
         1,
         null,
         1,
@@ -2365,7 +2403,7 @@
         3,
         3,
         3,
-        3,
+        2,
         null,
         null,
         3,
@@ -2577,7 +2615,7 @@
         null,
         null
       ],
-      "/Users/raphaelcosta/github/Cenize/braspag-pagador/spec/payment/eft_spec.rb": [
+      "/home/daniel/projetos/ruby/infinity-look/braspag-pagador/spec/payment/eft_spec.rb": [
         1,
         null,
         1,
@@ -2667,7 +2705,7 @@
         null,
         null
       ],
-      "/Users/raphaelcosta/github/Cenize/braspag-pagador/spec/payment/recurrency_credit_card_spec.rb": [
+      "/home/daniel/projetos/ruby/infinity-look/braspag-pagador/spec/payment/recurrency_credit_card_spec.rb": [
         1,
         null,
         1,
@@ -2720,7 +2758,7 @@
         3,
         3,
         3,
-        3,
+        2,
         null,
         null,
         3,
@@ -2770,6 +2808,6 @@
         null
       ]
     },
-    "timestamp": 1370466714
+    "timestamp": 1385250604
   }
 }

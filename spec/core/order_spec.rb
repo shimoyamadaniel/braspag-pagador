@@ -142,7 +142,7 @@ describe BraspagPagador::Order do
     end
 
     it "should populate data" do
-      resp = BraspagPagador::Order.from_info(connection, order, mock(:body => valid_xml))
+      resp = BraspagPagador::Order.from_info(connection, order, double(:body => valid_xml))
 
       order.authorization.should eq('885796')
       order.payment_method_name.should eq('American Express 2P')
@@ -174,7 +174,7 @@ describe BraspagPagador::Order do
     end
 
     it "should populate data accepts invalid xml" do
-      resp = BraspagPagador::Order.from_info(connection, order, mock(:body => invalid_xml))
+      resp = BraspagPagador::Order.from_info(connection, order, double(:body => invalid_xml))
 
       resp.should eq({
         :authorization       => nil,
@@ -194,7 +194,7 @@ describe BraspagPagador::Order do
     end
 
     it "should populate data for error" do
-      resp = BraspagPagador::Order.from_info(connection, order, mock(:body => error_xml))
+      resp = BraspagPagador::Order.from_info(connection, order, double(:body => error_xml))
 
       resp.should eq({
         :authorization       => nil,
@@ -259,7 +259,7 @@ describe BraspagPagador::Order do
     end
 
     it "should populate data" do
-      resp = BraspagPagador::Order.from_info_billet(connection, order, mock(:body => valid_xml))
+      resp = BraspagPagador::Order.from_info_billet(connection, order, double(:body => valid_xml))
 
       order.customer.name.should eq('XPTO')
 
@@ -298,7 +298,7 @@ describe BraspagPagador::Order do
     end
 
     it "should not raise error for invalid xml" do
-      resp = BraspagPagador::Order.from_info_billet(connection, order, mock(:body => invalid_xml))
+      resp = BraspagPagador::Order.from_info_billet(connection, order, double(:body => invalid_xml))
 
       resp.should eq({
         :document_number => nil,
@@ -347,7 +347,7 @@ describe BraspagPagador::Order do
     end
 
     it "should populate data" do
-      resp = BraspagPagador::Order.from_info_credit_card(connection, order, mock(:body => valid_xml))
+      resp = BraspagPagador::Order.from_info_credit_card(connection, order, double(:body => valid_xml))
 
       order.credit_card.checking_number.should eq('11111')
       order.credit_card.avs.should eq('false')
